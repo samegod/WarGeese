@@ -19,8 +19,10 @@ public class PlayerMotionController : MonoBehaviour
 			transform.Translate(_currentMoveDirection * (speed * Time.deltaTime));
 		}
 
-		transform.Rotate(_currentRotateDirection * (rotateSpeed * Time.deltaTime));
-		
+		if (_currentRotateDirection != Vector3.zero)
+		{
+			transform.Rotate(_currentRotateDirection * (rotateSpeed * Time.deltaTime));
+		}
 	}
 
 	public void Rotate (Direction direction)

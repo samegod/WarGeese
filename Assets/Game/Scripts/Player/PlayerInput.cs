@@ -5,13 +5,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    #region Fields
-
     [SerializeField] private PlayerController player;
-
-    #endregion
-
-    #region Unity Methods
 
     private void Awake()
     {
@@ -19,10 +13,6 @@ public class PlayerInput : MonoBehaviour
         MoveButton.OnMouseUp += StopMotion;
     }
     
-    #endregion
-    
-    #region Private Methods
-
     private void Move(Direction direction)
     {
         player.Move(direction);
@@ -32,7 +22,4 @@ public class PlayerInput : MonoBehaviour
     {
         player.StopMotion();
     }
-
-    #endregion
-
 }

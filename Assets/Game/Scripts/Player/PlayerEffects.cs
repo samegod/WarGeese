@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Additions.Enums;
+using Additions.Utils;
 using UnityEngine;
 
 public class PlayerEffects : MonoBehaviour
@@ -28,12 +29,8 @@ public class PlayerEffects : MonoBehaviour
 
     public void StartMoveEffect(Direction direction)
     {
-        int koef = 1;
-        if (direction == Direction.Right)
-            koef = -1;
-        else if (direction == Direction.None)
-            koef = 0;
-
+        float koef = DirectionAxis.GetAxis(direction).x;
+        
         if (_rotationCoroutine != null)
             StopCoroutine(_rotationCoroutine);
 

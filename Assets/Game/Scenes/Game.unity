@@ -341,6 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  rotateSpeed: 1
 --- !u!4 &482310989
 Transform:
   m_ObjectHideFlags: 0
@@ -556,7 +557,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1387777214}
   - component: {fileID: 1387777213}
-  - component: {fileID: 1387777212}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -564,14 +564,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1387777212
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387777211}
-  m_Enabled: 1
 --- !u!20 &1387777213
 Camera:
   m_ObjectHideFlags: 0

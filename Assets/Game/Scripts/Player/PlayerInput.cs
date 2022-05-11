@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private PlayerController player;
+	[SerializeField] private PlayerController player;
 
-    private void Awake()
-    {
-        MoveButton.OnMouseDown += Move;
-        MoveButton.OnMouseUp += StopMotion;
-    }
-    
-    private void Move(Direction direction)
-    {
-        player.Move(direction);
-    }
+	private void Awake()
+	{
+		MoveButton.OnMouseDown += Move;
+		MoveButton.OnMouseUp += StopMotion;
+	}
 
-    private void StopMotion()
-    {
-        player.StopMotion();
-    }
+	private void Move (Direction direction)
+	{
+		player.Move(direction);
+	}
+
+	private void StopMotion()
+	{
+		player.StopMotion();
+	}
 }

@@ -2,66 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12d517ac-086a-4a64-9c86-277829f6521c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/AssetPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/AssetPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/AssetProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/AssetProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/IAssets.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/AssetManagement/IAssets.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Factory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Factory/GameFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Factory/IGameFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Factory/IGameFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Game.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Game.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameBootstrapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameBootstrapper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameRunner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/ICoroutineRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/ICoroutineRunner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/SceneLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/SceneLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/BootstrapState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/BootstrapState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/GameLoopState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/GameLoopState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/GameStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/GameStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/IState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/IState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/LoadLevelState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/States/LoadLevelState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/AllServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/AllServices.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/IService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/IService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/IInputService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/IInputService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/InputService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/InputService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/MobileInputService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/MobileInputService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/StandaloneInputService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Sctipts/Services/Input/StandaloneInputService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/InitScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/InitScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Sctipts/Logic/LoadingCurtain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameRunner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Sctipts/Infrastructure/GameBootstrapper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,7 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1652213537534</updated>
       <workItem from="1652213551085" duration="449000" />
-      <workItem from="1652291596388" duration="2326000" />
+      <workItem from="1652291596388" duration="3084000" />
+      <workItem from="1652295083634" duration="331000" />
     </task>
     <servers />
   </component>

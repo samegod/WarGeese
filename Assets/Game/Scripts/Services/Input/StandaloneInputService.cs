@@ -1,23 +1,29 @@
+using Additions.Enums;
 using UnityEngine;
 
 namespace Scripts.Services.Input
 {
 	public class StandaloneInputService : InputService
 	{
-		public override Vector2 Axis
+		public override Direction Axis
 		{
 			get
 			{
-				var axis = SimpleInputAxis();
+				var axis = InputDirection();
 
-				if (axis == Vector2.zero)
+				if (axis == Direction.None)
 					axis = UnityAxis();
 
 				return axis;
 			}
 		}
 
-		private static Vector2 UnityAxis()
-			=> new Vector2(UnityEngine.Input.GetAxis(Horizontal), UnityEngine.Input.GetAxis(Vertical));
+		private static Direction UnityAxis()
+		{
+			if (UnityEngine.Input.GetAxis(Horizontal) == 0f)
+				return Direction.None;
+
+			return UnityEngine.Input.GetAxis(Horizontal) < 0f ? Direction.Left : Direction.Right;
+		}
 	}
 }

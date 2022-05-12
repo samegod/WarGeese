@@ -1,27 +1,29 @@
-﻿using System;
-using Additions.Enums;
-using DG.Tweening;
+﻿using Additions.Enums;
+using GameFiles.Scripts.Services;
+using Scripts.Services.Input;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    #region Fields
-
     [SerializeField] private PlayerController player;
 
-    #endregion
-
-    #region Unity Methods
+    private IInputService _inputService;
 
     private void Awake()
     {
-        MoveButton.OnMouseDown += Move;
-        MoveButton.OnMouseUp += StopMotion;
+        _inputService = AllServices.Container.Single<IInputService>();
+        _inputService.OnDirectionChanged += SetMovement;
     }
-    
-    #endregion
-    
-    #region Private Methods
+
+    private void SetMovement()
+    {
+        Debug.Log(_inputService.Axis);
+        if(_inputService.Axis != Direction.None)
+            Move(_inputService.Axis);
+        else
+            StopMotion();
+    }
+
 
     private void Move(Direction direction)
     {
@@ -32,7 +34,5 @@ public class PlayerInput : MonoBehaviour
     {
         player.StopMotion();
     }
-
-    #endregion
 
 }

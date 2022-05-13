@@ -1,5 +1,6 @@
 using System;
-using UnityEngine;
+using Additions.Enums;
+using Game.Scripts.Player;
 
 namespace Scripts.Services.Input
 {
@@ -9,18 +10,22 @@ namespace Scripts.Services.Input
 		protected const string Vertical = "Vertical";
 		private const string Button = "Fire";
 
-		public abstract Vector2 Axis { get; }
+		public InputService() =>
+			MoveButtonMediator.OnDirectionChanged += OnOnDirectionChanged;
+
+		public event Action OnDirectionChanged;
+
+		public abstract Direction Axis { get; }
 
 		public bool IsAttackButtonUp()
 		{
 			throw new Exception();
-			//return SimpleInput.GetButtonUp(Button);
 		}
 
-		protected static Vector2 SimpleInputAxis()
-		{
-			throw new Exception();
-			//return new Vector2(SimpleInput.GetAxis(Horizontal), SimpleInput.GetAxis(Vertical));
-		}
+		protected static Direction InputDirection() =>
+			MoveButtonMediator.CurrentDirection;
+
+		private void OnOnDirectionChanged() =>
+			OnDirectionChanged?.Invoke();
 	}
 }

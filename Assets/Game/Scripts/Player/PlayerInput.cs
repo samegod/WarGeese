@@ -1,11 +1,12 @@
 ﻿using Additions.Enums;
+using Characters;
 using GameFiles.Scripts.Services;
 using Scripts.Services.Input;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private PlayerController player;
+    [SerializeField] private Character player;
 
     private IInputService _inputService;
 
@@ -17,22 +18,18 @@ public class PlayerInput : MonoBehaviour
 
     private void SetMovement()
     {
-        Debug.Log(_inputService.Axis);
         if(_inputService.Axis != Direction.None)
-            Move(_inputService.Axis);
+            Turn(_inputService.Axis);
         else
-            StopMotion();
+            StopTurning();
     }
-
-
-    private void Move(Direction direction)
+    private void Turn (Direction direction)
     {
-        player.Move(direction);
+        player.Turn(direction);
     }
 
-    private void StopMotion()
+    private void StopTurning()
     {
-        player.StopMotion();
+        player.StopTurning();
     }
-
 }

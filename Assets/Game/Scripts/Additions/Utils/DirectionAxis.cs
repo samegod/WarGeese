@@ -21,5 +21,18 @@ namespace Additions.Utils
         {
             return DirectionsDictionary[direction];
         }
+        
+        public static  Vector3 GetRotationAxis(Direction direction)
+        {
+            Vector3 angles;
+
+            Vector3 inputVector = GetAxis(direction);
+
+            angles.x = inputVector.y;
+            angles.y = inputVector.x;
+            angles.z = inputVector.z;
+
+            return angles;
+        }
     }
 }

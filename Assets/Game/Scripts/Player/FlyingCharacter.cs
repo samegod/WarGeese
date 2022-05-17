@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlyingCharacter : Character
 {
     [SerializeField] private TurnEffect turnEffect;
-    
+
     private bool _isGrounded = false;
     
     public override void Turn (Direction direction)

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using Additions.Enums;
+﻿using Additions.Enums;
 using Additions.Utils;
 using UnityEngine;
 

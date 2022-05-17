@@ -1,5 +1,6 @@
 using System;
 using Additions.Enums;
+using CodeBase.Enemy;
 using UnityEngine;
 
 namespace Characters
@@ -7,6 +8,10 @@ namespace Characters
 	public abstract class Character : MonoBehaviour
 	{
 		[SerializeField] protected MotionController motionController;
+		[SerializeField] protected virtual CharacterAnimator animator
+		{
+			get;
+		}
 
 		private void Start()
 		{
@@ -24,11 +29,11 @@ namespace Characters
 
 		public virtual void Attack()
 		{
-			throw new System.NotImplementedException();
+			throw new NotImplementedException();
 		}
 		public virtual void SetAnimation ()
 		{
-			throw new System.NotImplementedException();
+			throw new NotImplementedException();
 		}
 		public virtual void Turn (Direction direction)
 		{
@@ -36,7 +41,7 @@ namespace Characters
 		}
 		public virtual void StopMotion()
 		{
-			throw new System.NotImplementedException();
+			throw new NotImplementedException();
 		}
 		public virtual void StopTurning()
 		{

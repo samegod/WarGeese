@@ -20,7 +20,7 @@ public enum AnimationNames
 public class CharacterAnimatorController : MonoBehaviour
 {
 	[SerializeField] private Animator animator;
-	[SerializeField] AudioSource audioSource;
+	AudioSource _audioSource;
 
 	private readonly Dictionary<States, StateBehavior> _behaviors = new Dictionary<States, StateBehavior>();
 	private readonly List<States> _currentStatesList = new List<States>();
@@ -31,7 +31,7 @@ public class CharacterAnimatorController : MonoBehaviour
 
 	private void Awake()
 	{
-		audioSource = GetComponent<AudioSource>();
+		_audioSource = GetComponent<AudioSource>();
 		
 		InitializeStates();
 	}
@@ -72,7 +72,7 @@ public class CharacterAnimatorController : MonoBehaviour
 
 		if (specialAudioClip)
 		{
-			audioSource.PlayOneShot(specialAudioClip);
+			_audioSource.PlayOneShot(specialAudioClip);
 		}
 
 		_onSpecialComplete = onSpecialComplete;

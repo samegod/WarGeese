@@ -1,30 +1,34 @@
 using System;
 using Additions.Enums;
-using CodeBase.Enemy;
 using UnityEngine;
 
 namespace Characters
 {
+	[RequireComponent(typeof(CharacterAnimatorController), typeof(MotionController))]
+	[RequireComponent(typeof(AudioSource))]
 	public abstract class Character : MonoBehaviour
 	{
-		[SerializeField] protected MotionController motionController;
-		[SerializeField] protected virtual CharacterAnimator animator
+		protected MotionController MotionController;
+		protected CharacterAnimatorController AnimatorController;
+		
+		private void Awake()
 		{
-			get;
+			MotionController = GetComponent<MotionController>();
+			AnimatorController = GetComponent<CharacterAnimatorController>();
 		}
 
 		private void Start()
 		{
-			motionController.Move(Direction.Forward);
+			MotionController.Move(Direction.Forward);
 		}
 
 		public virtual void Move (Direction direction)
 		{
-			motionController.Move(direction);
+			MotionController.Move(direction);
 		}
 		public virtual void Move (Transform point)
 		{
-			motionController.MoveToPoint(point.position);
+			MotionController.MoveToPoint(point.position);
 		}
 
 		public virtual void Attack()
@@ -37,7 +41,7 @@ namespace Characters
 		}
 		public virtual void Turn (Direction direction)
 		{
-			motionController.Rotate(direction);
+			MotionController.Rotate(direction);
 		}
 		public virtual void StopMotion()
 		{
@@ -45,7 +49,7 @@ namespace Characters
 		}
 		public virtual void StopTurning()
 		{
-			motionController.StopRotation();
+			MotionController.StopRotation();
 		}
 	}
 }

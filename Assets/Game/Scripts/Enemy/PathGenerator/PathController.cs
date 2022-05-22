@@ -11,12 +11,13 @@ namespace Game.Scripts.Enemy.PathGenerator
 		[SerializeField] private List<PathRoad> pathRoads;
 
 		private PathRoad _startPoint;
-		private List<List<PathRoad>> _paths;
+		private List<List<PathRoad>> _paths = new List<List<PathRoad>>() {new List<PathRoad>()};
 
 		private void Start()
 		{
 			pathRoads.ForEach(road => road.InitNeighbors());
 			InitializeStartPoint();
+			InitPaths();
 		}
 
 		private void InitializeStartPoint() =>
@@ -24,25 +25,42 @@ namespace Game.Scripts.Enemy.PathGenerator
 
 		private void InitPaths()
 		{
+			PathRoad prevRoad = _startPoint;
 			PathRoad currentRoad = _startPoint;
 			PathRoad nextRoad;
-			PathRoad prevRoad;
 
 			int currentPathNumber = 0;
 
-			/*do
+			for (int i = 0;
+			     i < pathRoads.Count && TakeNextRoad(currentRoad, prevRoad) != null;
+			     i++)
 			{
+				nextRoad = TakeNextRoad(currentRoad, prevRoad);
 				_paths[currentPathNumber]
-					.Add(currentRoad.NeighborsRoad.First(neighbor => neighbor != currentRoad));
-			} while ();*/
+					.Add(nextRoad);
+
+				prevRoad = currentRoad;
+				currentRoad = nextRoad;
+			}
+
+			PathRoad TakeNextRoad(PathRoad current, PathRoad prev) =>
+				current.NeighborsRoad.FirstOrDefault(neighbor => neighbor != current && neighbor != prev);
 		}
 
 		private void OnDrawGizmos()
 		{
-			if (_startPoint == null) return;
+			if (_startPoint != null)
+			{
+				Gizmos.color = Color.red;
+				Gizmos.DrawCube(_startPoint.transform.position, Vector3.one);
+			}
 
-			Gizmos.color = Color.red;
-			Gizmos.DrawCube(_startPoint.transform.position, Vector3.one);
+			if (_paths[0].Count != 0)
+			{
+				Gizmos.color = Color.blue;
+				for (int i = 0; i < _paths[0].Count; i++)
+					Gizmos.DrawCube(_paths[0][i].transform.position, Vector3.one);
+			}
 		}
 
 		#region Editor

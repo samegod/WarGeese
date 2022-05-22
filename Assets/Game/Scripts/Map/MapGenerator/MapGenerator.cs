@@ -1,12 +1,10 @@
-using System.Collections.Generic;
-using Additions.Enums.Extension;
 using UnityEngine;
 
 namespace Game.Scripts.Map.MapGenerator
 {
 	public class MapGenerator : MonoBehaviour
 	{
-		[SerializeField] private List<TileMap> tileMaps;
+		[SerializeField] private TilesContainer tilesContainer;
 		[SerializeField] private int countOfInitTiles;
 
 		private TileMap _currentTile;
@@ -14,10 +12,15 @@ namespace Game.Scripts.Map.MapGenerator
 
 		private void Start()
 		{
+			InitStartTiles();
+		}
+
+		private void InitStartTiles()
+		{
 			InitFirstTile();
 			for (int i = 0; i < countOfInitTiles - 1; i++)
 			{
-				_currentTile = TakeRandomTile();
+				_currentTile = tilesContainer.TakeRandomTile(_prevTile);
 				if (Random.Range(0, 2) == 0)
 					_currentTile.ExpandTile();
 
@@ -28,7 +31,7 @@ namespace Game.Scripts.Map.MapGenerator
 
 		private void InitFirstTile()
 		{
-			_currentTile = TakeRandomTile();
+			_currentTile = tilesContainer.TakeRandomTile(_prevTile);
 			_currentTile.SetPosition(Vector3.zero);
 			_prevTile = _currentTile;
 		}
@@ -38,8 +41,5 @@ namespace Game.Scripts.Map.MapGenerator
 			float difference = tile.transform.position.x - tile.ConnectPoints.PrevPointPosition.x;
 			tile.SetPosition(_prevTile.ConnectPoints.NextPointPosition + new Vector3(difference, 0f, 0f));
 		}
-
-		private TileMap TakeRandomTile() =>
-			Instantiate(tileMaps.GetRandomElement(), transform);
 	}
 }

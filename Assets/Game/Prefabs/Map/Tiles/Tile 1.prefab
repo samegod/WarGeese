@@ -423,6 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfTile: 0
   connectPoints: {fileID: 8807953683110655864}
+  index: 1
 --- !u!1 &3079714841660076275
 GameObject:
   m_ObjectHideFlags: 0

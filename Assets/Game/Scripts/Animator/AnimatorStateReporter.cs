@@ -12,6 +12,7 @@ namespace Game.Scripts.Animator
       FindReader(animator);
 
       _stateReader.EnteredState(stateInfo.shortNameHash);
+      int[] arr = new int[3]{1, 2, 3};
     }
 
     public override void OnStateExit(UnityEngine.Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

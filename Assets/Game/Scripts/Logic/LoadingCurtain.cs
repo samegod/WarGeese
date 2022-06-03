@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Scripts.Logic
+namespace Game.Scripts.Logic
 {
 	public class LoadingCurtain : MonoBehaviour
 	{

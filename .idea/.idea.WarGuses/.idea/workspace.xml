@@ -3,9 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="12d517ac-086a-4a64-9c86-277829f6521c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/GameBootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/GameBootstrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/States/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/States/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Infrastructure/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/CameraMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/CameraMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/LoadingCurtain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/LoadingCurtain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/MillRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Logic/MillRotator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +35,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6af207ecd21044628913f7cc589986ae6e00/f5/7ecbdfcf/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../KnowledgeIsPower/Assets/CodeBase/Constants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cafb29d5233847fbb4edcf8d7c32b1e3299c90/5c/645d8796/Action.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6af207ecd21044628913f7cc589986ae6e00/f5/7ecbdfcf/Input.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +91,9 @@
       <workItem from="1652295083634" duration="331000" />
       <workItem from="1652608149545" duration="11153000" />
       <workItem from="1653151458054" duration="10766000" />
-      <workItem from="1653222411481" duration="16644000" />
+      <workItem from="1653222411481" duration="17394000" />
+      <workItem from="1653334900020" duration="3922000" />
+      <workItem from="1654283723157" duration="2941000" />
     </task>
     <servers />
   </component>

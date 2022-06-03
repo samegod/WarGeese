@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.Scripts.Logic;
 using GameFiles.Scripts.Infrastructure.Factory;
 using GameFiles.Scripts.Services;
 using Scripts.Infrastructure;
-using Scripts.Logic;
 
 namespace GameFiles.Scripts.Infrastructure.States
 {

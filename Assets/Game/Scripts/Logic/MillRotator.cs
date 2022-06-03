@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Scripts.Logic
+namespace Game.Scripts.Logic
 {
 	public class MillRotator : MonoBehaviour
 	{

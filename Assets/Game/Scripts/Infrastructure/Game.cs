@@ -1,6 +1,6 @@
+using Game.Scripts.Logic;
 using GameFiles.Scripts.Infrastructure.States;
 using GameFiles.Scripts.Services;
-using Scripts.Logic;
 
 namespace Scripts.Infrastructure
 {

@@ -1,5 +1,5 @@
-﻿using GameFiles.Scripts.Infrastructure.States;
-using Scripts.Logic;
+﻿using Game.Scripts.Logic;
+using GameFiles.Scripts.Infrastructure.States;
 using UnityEngine;
 
 namespace Scripts.Infrastructure

@@ -7,6 +7,7 @@ namespace Game.Scripts.Map.MapGenerator
 	public class TilesContainer : MonoBehaviour
 	{
 		[SerializeField] private List<TileMap> tilesMap;
+		[SerializeField] private List<TileMap> startTilesMap;
 
 		public TileMap TakeRandomTile(TileMap prevTile)
 		{
@@ -19,5 +20,8 @@ namespace Game.Scripts.Map.MapGenerator
 
 			return Instantiate(tileMap, transform);
 		}
+
+		public TileMap TakeRandomStartTile() =>
+			Instantiate(startTilesMap.GetRandomElement(), transform);
 	}
 }

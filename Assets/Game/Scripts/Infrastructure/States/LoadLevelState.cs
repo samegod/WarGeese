@@ -1,6 +1,6 @@
-﻿using GameFiles.Scripts.Infrastructure.Factory;
+﻿using Game.Scripts.Logic;
+using GameFiles.Scripts.Infrastructure.Factory;
 using Scripts.Infrastructure;
-using Scripts.Logic;
 using UnityEngine;
 
 namespace GameFiles.Scripts.Infrastructure.States

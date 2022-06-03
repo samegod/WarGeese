@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Game.Scripts.Map.MapGenerator
 {
@@ -10,28 +12,35 @@ namespace Game.Scripts.Map.MapGenerator
 		private TileMap _currentTile;
 		private TileMap _prevTile;
 
-		private void Start()
-		{
+		private void OnEnable() =>
+			TileMap.OnCharacterEntered += SpawnRandomTile;
+
+		private void OnDisable() =>
+			TileMap.OnCharacterEntered -= SpawnRandomTile;
+
+		private void Start() =>
 			InitStartTiles();
-		}
 
 		private void InitStartTiles()
 		{
 			InitFirstTile();
 			for (int i = 0; i < countOfInitTiles - 1; i++)
-			{
-				_currentTile = tilesContainer.TakeRandomTile(_prevTile);
-				if (Random.Range(0, 2) == 0)
-					_currentTile.ExpandTile();
+				SpawnRandomTile();
+		}
 
-				ConnectTile(_currentTile);
-				_prevTile = _currentTile;
-			}
+		private void SpawnRandomTile()
+		{
+			_currentTile = tilesContainer.TakeRandomTile(_prevTile);
+			if (Random.Range(0, 2) == 0)
+				_currentTile.ExpandTile();
+
+			ConnectTile(_currentTile);
+			_prevTile = _currentTile;
 		}
 
 		private void InitFirstTile()
 		{
-			_currentTile = tilesContainer.TakeRandomTile(_prevTile);
+			_currentTile = tilesContainer.TakeRandomStartTile();
 			_currentTile.SetPosition(Vector3.zero);
 			_prevTile = _currentTile;
 		}

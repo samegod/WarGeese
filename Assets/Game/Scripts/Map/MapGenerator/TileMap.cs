@@ -15,6 +15,8 @@ namespace Game.Scripts.Map.MapGenerator
 
 		public int Index => index;
 
+		public TypeOfTile TypeOfTile => typeOfTile;
+
 		public static event Action OnCharacterEntered;
 
 		private void OnEnable()
@@ -32,8 +34,14 @@ namespace Game.Scripts.Map.MapGenerator
 		public void SetPosition(Vector3 position) =>
 			transform.position = position;
 
-		public void ExpandTile() =>
+		public void SetRotation(Vector3 rotation) =>
+			transform.localRotation = Quaternion.Euler(rotation);
+
+		public void TurnOverXTile() =>
 			transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
+
+		public void TurnOverZTile() =>
+			transform.localScale = Vector3.Scale(transform.localScale, new Vector3(1, 1, -1));
 
 		private void CharacterEntered(Collider obj)
 		{

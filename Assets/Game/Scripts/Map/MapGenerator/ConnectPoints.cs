@@ -9,5 +9,8 @@ namespace Game.Scripts.Map.MapGenerator
 
 		public Vector3 PrevPointPosition => prevPoint.position;
 		public Vector3 NextPointPosition => nextPoint.position;
+
+		public Vector3 PrevPointLocalPosition => prevPoint.localPosition;
+		public Vector3 NextPointLocalPosition => nextPoint.localPosition;
 	}
 }

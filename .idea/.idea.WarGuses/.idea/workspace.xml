@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="12d517ac-086a-4a64-9c86-277829f6521c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Utils/RandomUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Utils/RandomUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/AngleTile 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/AngleTile 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +100,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="GEESE-7-PathGenerator" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

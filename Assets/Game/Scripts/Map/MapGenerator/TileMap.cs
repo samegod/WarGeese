@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Game.Scripts.Logic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace Game.Scripts.Map.MapGenerator
 		[SerializeField] private TypeOfTile typeOfTile;
 		[SerializeField] private ConnectPoints connectPoints;
 		[SerializeField] private TriggerObserver triggerObserve;
+		[SerializeField] private List<Point> roadPoints;
 		[SerializeField] private int index;
 
 		public ConnectPoints ConnectPoints => connectPoints;

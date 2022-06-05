@@ -358,8 +358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilesContainer: {fileID: 99171324}
-  minForwardRoadsToAngle: 5
-  countOfInitTiles: 50
+  minForwardRoadsToAngle: 7
+  countOfInitTiles: 4
 --- !u!4 &1055257536
 Transform:
   m_ObjectHideFlags: 0

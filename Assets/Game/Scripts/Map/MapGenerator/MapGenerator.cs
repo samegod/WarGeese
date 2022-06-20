@@ -36,7 +36,7 @@ namespace Game.Scripts.Map.MapGenerator
 				SpawnForwardRoad(false);
 		}
 
-		private void SpawnRoad()
+		public void SpawnRoad()
 		{
 			if (_currentCountRoads < minForwardRoadsToAngle)
 			{

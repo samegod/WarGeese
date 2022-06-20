@@ -34,7 +34,7 @@ namespace GameFiles.Scripts.Infrastructure.States
 		}
 
 		private void EnterLoadLevel() =>
-			_stateMachine.Enter<LoadLevelState, string>("Game");
+			_stateMachine.Enter<LoadLevelState, string>("Polygon");
 
 		private void RegisterServices()
 		{

@@ -5,21 +5,29 @@ using UnityEngine;
 namespace Characters
 {
 	[RequireComponent(typeof(CharacterAnimatorController), typeof(MotionController))]
-	[RequireComponent(typeof(AudioSource))]
+	[RequireComponent(typeof(AudioSource), typeof(CharacterController))]
 	public abstract class Character : MonoBehaviour
 	{
 		protected MotionController MotionController;
 		protected CharacterAnimatorController AnimatorController;
+
+		private CharacterController _controller;
 		
 		private void Awake()
 		{
 			MotionController = GetComponent<MotionController>();
 			AnimatorController = GetComponent<CharacterAnimatorController>();
+			_controller = GetComponent<CharacterController>();
 		}
 
 		private void Start()
 		{
 			MotionController.Move(Direction.Forward);
+		}
+
+		private void Update()
+		{
+			AnimatorController.UpdateMotionAnimations(_controller.velocity.z);
 		}
 
 		public virtual void Move (Direction direction)
@@ -51,5 +59,8 @@ namespace Characters
 		{
 			MotionController.StopRotation();
 		}
+
+		public void EnableGravity() => MotionController.EnableGravity();
+		public void DisableGravity() => MotionController.DisableGravity();
 	}
 }

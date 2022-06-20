@@ -25,6 +25,7 @@ public class CharacterAnimatorController : MonoBehaviour
 	private readonly Dictionary<States, StateBehavior> _behaviors = new Dictionary<States, StateBehavior>();
 	private readonly List<States> _currentStatesList = new List<States>();
 
+	private readonly int _speedHash = Animator.StringToHash("Speed");
 	private readonly int _playSpecialHash = Animator.StringToHash("Play Special");
 	private readonly int _specialIdHash = Animator.StringToHash("Special Id");
 	private Action<bool> _onSpecialComplete;
@@ -32,16 +33,8 @@ public class CharacterAnimatorController : MonoBehaviour
 	private void Awake()
 	{
 		_audioSource = GetComponent<AudioSource>();
-		
-		InitializeStates();
 	}
 
-	public void InitializeStates()
-	{
-		_behaviors[States.Idle] = new StateIdle(animator);
-		_behaviors[States.Fly] = new StateFly(animator);
-	}
-	
 	public void StartState(States state, Action callBack = null)
 	{
 		_behaviors[state].StartState(callBack);
@@ -63,6 +56,11 @@ public class CharacterAnimatorController : MonoBehaviour
 			_behaviors[state].StateEnd();
 			_currentStatesList.Remove(state);
 		}
+	}
+	
+	public void UpdateMotionAnimations(float forwardSpeed)
+	{
+		animator.SetFloat(_speedHash, forwardSpeed);
 	}
 	
 	public void PlaySpecialAnimation(AnimationNames animationNames, AudioClip specialAudioClip = null, Action<bool> onSpecialComplete = null)

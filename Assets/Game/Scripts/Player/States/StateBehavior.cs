@@ -8,9 +8,10 @@ public abstract class StateBehavior
 	protected Animator Animator;
 	protected Character Character;
 	
-	public StateBehavior(Animator animator)
+	public StateBehavior(Animator animator, Character character)
 	{
 		Animator = animator;
+		Character = character;
 	}
 	
 	public abstract void StartState (Action callBack = null);

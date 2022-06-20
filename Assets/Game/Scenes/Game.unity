@@ -447,30 +447,13 @@ PrefabInstance:
     - target: {fileID: 1025854138450600246, guid: 6fefc39e3a8ef9d41a646df980f15137, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 965063857}
+      objectReference: {fileID: 0}
     - target: {fileID: 3555670386918793757, guid: 6fefc39e3a8ef9d41a646df980f15137, type: 3}
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fefc39e3a8ef9d41a646df980f15137, type: 3}
---- !u!1 &965063856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 461654424872598880, guid: 6fefc39e3a8ef9d41a646df980f15137, type: 3}
-  m_PrefabInstance: {fileID: 904129434}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &965063857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965063856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d382167a40d68b4db1a20a92a6a63c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1290813703
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1387777214}
   - component: {fileID: 1387777213}
-  - component: {fileID: 1387777212}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -693,14 +675,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1387777212
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387777211}
-  m_Enabled: 1
 --- !u!20 &1387777213
 Camera:
   m_ObjectHideFlags: 0

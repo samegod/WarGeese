@@ -3,23 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="12d517ac-086a-4a64-9c86-277829f6521c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/BigMap/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/BigMap/Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/StartTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/StartTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile 3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Map/Tiles/Tile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_04.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_05.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneAssets/LowPolyAssetBundle/LowPolyMegapolis/Prefabs/Buildings/Factory_05.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +23,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24599fe2776145d58ab771516c063d5613b000/a6/d6086bf7/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6af207ecd21044628913f7cc589986ae6e00/f5/7ecbdfcf/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../KnowledgeIsPower/Assets/CodeBase/Constants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cafb29d5233847fbb4edcf8d7c32b1e3299c90/5c/645d8796/Action.cs" root0="SKIP_HIGHLIGHTING" />
@@ -102,7 +91,8 @@
       <workItem from="1654841178297" duration="752000" />
       <workItem from="1654952707799" duration="2044000" />
       <workItem from="1655665726268" duration="2730000" />
-      <workItem from="1655715287024" duration="541000" />
+      <workItem from="1655715287024" duration="13911000" />
+      <workItem from="1655815845489" duration="1435000" />
     </task>
     <servers />
   </component>

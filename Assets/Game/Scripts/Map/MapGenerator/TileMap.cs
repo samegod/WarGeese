@@ -15,6 +15,8 @@ namespace Game.Scripts.Map.MapGenerator
 
 		public ConnectPoints ConnectPoints => connectPoints;
 
+		public IReadOnlyList<Point> RoadPoints => roadPoints;
+
 		public int Index => index;
 
 		public TypeOfTile TypeOfTile => typeOfTile;

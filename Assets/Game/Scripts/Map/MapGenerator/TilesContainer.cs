@@ -14,6 +14,8 @@ namespace Game.Scripts.Map.MapGenerator
 		private List<TileMap> _forwardRoads;
 		private List<TileMap> _angleRoads;
 
+		public event Action<TileMap> OnTileGenerated;
+		
 		private void Awake() =>
 			DetermineRoads();
 
@@ -44,12 +46,21 @@ namespace Game.Scripts.Map.MapGenerator
 		private TileMap InstantiateTile(TileMap prevTile, TileMap tileMap, List<TileMap> tilesForReRandom)
 		{
 			if (prevTile == null)
-				return Instantiate(tileMap, transform);
+				return RegisterInstantiateTile(tileMap);
 
 			while (tileMap.Index == prevTile.Index)
 				tileMap = tilesForReRandom.GetRandomElement();
 
-			return Instantiate(tileMap, transform);
+			return RegisterInstantiateTile(tileMap);
+		}
+
+		private TileMap RegisterInstantiateTile(TileMap tileMap)
+		{
+			TileMap targetTile = Instantiate(tileMap, transform);
+
+			OnTileGenerated?.Invoke(targetTile);
+
+			return targetTile;
 		}
 
 		private void DetermineRoads()

@@ -33,7 +33,7 @@ namespace Game.Scripts.Map.MapGenerator
 		{
 			InitStartTile();
 			for (int i = 0; i < countOfInitTiles - 1; i++)
-				SpawnForwardRoad(false);
+				SpawnRoad();
 		}
 
 		public void SpawnRoad()

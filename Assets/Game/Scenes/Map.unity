@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilesContainer: {fileID: 99171324}
+  pathGenerator: {fileID: 610984674}
 --- !u!4 &1315151709
 Transform:
   m_ObjectHideFlags: 0

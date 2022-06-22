@@ -70,7 +70,7 @@ namespace Game.Scripts.Map.MapGenerator
 			_lastAngle = _currentTile;
 			if (_currentDirection == TileDirection.Vertical)
 				_currentTile.TurnOverXTile();
-			else if (Random.Range(0, 2) == 0)
+			else if (RandomUtil.BoolRandom())
 				_currentTile.TurnOverXTile();
 
 			if (IsScaleZNegative(_prevTile))

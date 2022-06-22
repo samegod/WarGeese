@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WarGuses/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TileMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Map/MapGenerator/TilesContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,9 @@
       <workItem from="1654952707799" duration="2044000" />
       <workItem from="1655665726268" duration="2730000" />
       <workItem from="1655715287024" duration="13911000" />
-      <workItem from="1655815845489" duration="1435000" />
+      <workItem from="1655815845489" duration="3101000" />
+      <workItem from="1655837689801" duration="2200000" />
+      <workItem from="1655904673414" duration="1746000" />
     </task>
     <servers />
   </component>

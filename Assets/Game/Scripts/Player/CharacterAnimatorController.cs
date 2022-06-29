@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public enum States
 {
@@ -14,48 +13,25 @@ public enum States
 
 public enum AnimationNames
 {
-	
+	Idle,
 }
 
 public class CharacterAnimatorController : MonoBehaviour
 {
 	[SerializeField] private Animator animator;
-	AudioSource _audioSource;
-
-	private readonly Dictionary<States, StateBehavior> _behaviors = new Dictionary<States, StateBehavior>();
-	private readonly List<States> _currentStatesList = new List<States>();
+	
+	private AudioSource _audioSource;
 
 	private readonly int _speedHash = Animator.StringToHash("Speed");
 	private readonly int _playSpecialHash = Animator.StringToHash("Play Special");
 	private readonly int _specialIdHash = Animator.StringToHash("Special Id");
 	private Action<bool> _onSpecialComplete;
 
+	public Animator ModelAnimator => animator;
+	
 	private void Awake()
 	{
 		_audioSource = GetComponent<AudioSource>();
-	}
-
-	public void StartState(States state, Action callBack = null)
-	{
-		_behaviors[state].StartState(callBack);
-		_currentStatesList.Add(state);
-	}
-
-	public void UpdateStates()
-	{
-		foreach (States state in _currentStatesList)
-		{
-			_behaviors[state].UpdateState();
-		}
-	}
-
-	public void FinishState (States state)
-	{
-		if (_currentStatesList.Contains(state))
-		{
-			_behaviors[state].StateEnd();
-			_currentStatesList.Remove(state);
-		}
 	}
 	
 	public void UpdateMotionAnimations(float forwardSpeed)

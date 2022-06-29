@@ -7,6 +7,11 @@ public class FlyingCharacter : Character
     [SerializeField] private TurnEffect turnEffect;
 
     private bool _isGrounded = false;
+
+    public void FlyUp()
+    {
+        StatesController.SetState<StateFly>();
+    }
     
     public override void Turn (Direction direction)
     {

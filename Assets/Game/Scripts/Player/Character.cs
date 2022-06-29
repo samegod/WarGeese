@@ -6,28 +6,27 @@ namespace Characters
 {
 	[RequireComponent(typeof(CharacterAnimatorController), typeof(MotionController))]
 	[RequireComponent(typeof(AudioSource), typeof(CharacterController))]
+	[RequireComponent(typeof(CharacterStatesController))]
 	public abstract class Character : MonoBehaviour
 	{
 		protected MotionController MotionController;
 		protected CharacterAnimatorController AnimatorController;
+		protected CharacterStatesController StatesController;
 
 		private CharacterController _controller;
-		
+
 		private void Awake()
 		{
 			MotionController = GetComponent<MotionController>();
 			AnimatorController = GetComponent<CharacterAnimatorController>();
+			StatesController = GetComponent<CharacterStatesController>();
 			_controller = GetComponent<CharacterController>();
 		}
 
 		private void Start()
 		{
-			MotionController.Move(Direction.Forward);
-		}
-
-		private void Update()
-		{
-			AnimatorController.UpdateMotionAnimations(_controller.velocity.z);
+			StatesController.Init(this, AnimatorController.ModelAnimator);
+			StatesController.SetState<StateIdle>();
 		}
 
 		public virtual void Move (Direction direction)

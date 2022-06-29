@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Characters;
 using UnityEngine;
 
@@ -7,17 +8,18 @@ public abstract class StateBehavior
 	protected Action CallBack;
 	protected Animator Animator;
 	protected Character Character;
-	
-	public StateBehavior(Animator animator, Character character)
+
+	public StateBehavior()
 	{
-		Animator = animator;
+	}
+	
+	public void Initialize (Character character, Animator animator)
+	{
 		Character = character;
+		Animator = animator;
 	}
-	
+
 	public abstract void StartState (Action callBack = null);
-	public virtual void UpdateState()
-	{
-	}
-	public abstract void StateEnd();
-	
+	public abstract void UpdateState();
+	public abstract Task FinishState();
 }

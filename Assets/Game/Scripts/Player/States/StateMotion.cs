@@ -1,25 +1,15 @@
 using System;
-using Characters;
-using UnityEngine;
+using System.Threading.Tasks;
 
 public class StateMotion : StateBehavior
 {
-
-	public StateMotion(Animator animator, Character character) : base(animator, character)
-	{
-	}
 	public override void StartState (Action callBack = null)
 	{
-	}
-
-	public override void UpdateState()
-	{
-		base.UpdateState();
-		
 		
 	}
+	public override void UpdateState() { }
 
-	public override void StateEnd()
+	public override async Task FinishState()
 	{
 	}
 }
